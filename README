@@ -1,0 +1,29 @@
+Miscellaneous data objects:
+
+ge_object is a trivial object that takes various types of coordinates
+from my coordinate library and outputs rudimentary google earth KML
+placemarks. This makes it easier to assemble KML documents from
+coordinates or vectors of coordinates. There's plenty of room for
+refinmenent there. Maybe I'll take a crack at adding an XML builder to
+cppxml and building the KML with that, rather than just dumping text
+tags to a string buffer. If I returned an xml_node for the ge_object,
+I could manipulate and assemble them however I wanted before outputting
+a final document. Hmm :-D
+
+sp3_factory is an sp3 format ephemeris file reader. These files contain
+times and points where a satellite is at that specific time. The SP3
+factory reads them and notifies listeners when new points are available.
+
+Copyright 2013 Bruce Ide
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
