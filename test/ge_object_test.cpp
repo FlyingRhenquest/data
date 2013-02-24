@@ -49,7 +49,6 @@ public:
     CPPUNIT_ASSERT(line_obj.get_object_type() == "LineString");
     points.push_back(some_point); // make it a polygon
     fr::data::ge_object poly_obj(points);
-    std::cout << std::endl << poly_obj.to_string() << std::endl;
 
     CPPUNIT_ASSERT(poly_obj.get_object_type() == "Polygon");
   }
